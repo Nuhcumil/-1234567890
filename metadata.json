@@ -1,0 +1,5 @@
+{
+  "name": "日语记忆助手 - 艾宾浩斯科学背词",
+  "description": "基于艾宾浩斯遗忘曲线的日语单词记忆应用，支持Excel上传、智能字段识别及沉浸式悬浮窗学习模式。",
+  "requestFramePermissions": []
+}

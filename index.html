@@ -1,0 +1,58 @@
+
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>日语记忆助手</title>
+    <!-- 引入 Tailwind CSS 进行快速样式开发 -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- 引入 xlsx 库解析 Excel 文件 -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.18.5/xlsx.full.min.js"></script>
+    <style>
+        /* 隐藏滚动条但保留功能 */
+        .no-scrollbar::-webkit-scrollbar {
+            display: none;
+        }
+        .no-scrollbar {
+            -ms-overflow-style: none;
+            scrollbar-width: none;
+        }
+
+        /* 学习管理界面自定义滚动条：默认隐藏，悬停显示 */
+        .reveal-scrollbar::-webkit-scrollbar {
+            width: 6px;
+        }
+        .reveal-scrollbar::-webkit-scrollbar-track {
+            background: transparent;
+        }
+        .reveal-scrollbar::-webkit-scrollbar-thumb {
+            background: transparent;
+            border-radius: 10px;
+        }
+        .reveal-scrollbar:hover::-webkit-scrollbar-thumb {
+            background: #e5e7eb;
+        }
+        .reveal-scrollbar::-webkit-scrollbar-thumb:hover {
+            background: #d1d5db;
+        }
+
+        /* 自定义过渡动画 */
+        .page-transition {
+            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+    </style>
+<script type="importmap">
+{
+  "imports": {
+    "react/": "https://esm.sh/react@^19.2.3/",
+    "react": "https://esm.sh/react@^19.2.3",
+    "react-dom/": "https://esm.sh/react-dom@^19.2.3/"
+  }
+}
+</script>
+</head>
+<body class="bg-gray-50 text-gray-900 overflow-x-hidden">
+    <div id="root"></div>
+</body>
+</html>
